@@ -16,5 +16,6 @@ def check_bs(msg):
 
 
 msg = input("Enter Bit String: ")
+# Flag Bits 01111110
 encoded = check_bs(msg)
 print(encoded)
