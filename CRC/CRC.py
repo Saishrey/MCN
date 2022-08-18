@@ -8,7 +8,7 @@
 
 
 def find_remainder(data_stream, divisor, crc):
-    data = data_stream + crc if crc != '-1' else data_stream
+    data = data_stream + crc
     print(''.join(data))
     for i in range(len(data) - len(crc)):
         print(' '*i + ''.join(data[i:i+len(crc)+1]))
