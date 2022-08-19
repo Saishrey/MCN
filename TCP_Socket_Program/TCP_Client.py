@@ -9,6 +9,8 @@ if __name__ == "__main__":
 
     msg = input("Enter message: ")
     server.send(bytes(msg, "utf-8"))
+
     buffer = server.recv(1024)
     buffer = buffer.decode("utf-8")
+
     print(f"Server: {buffer}")
